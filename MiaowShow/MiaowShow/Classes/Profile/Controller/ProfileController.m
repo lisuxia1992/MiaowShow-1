@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"个人中心";
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 

@@ -58,3 +58,27 @@ fastlane/screenshots
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+MiaowShow/.DS_Store
+MiaowShow/MiaowShow/.DS_Store
+MiaowShow/MiaowShow/Classes/.DS_Store
+MiaowShow/MiaowShow/Classes/Frameworks/.DS_Store
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/_CodeSignature/CodeDirectory
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/_CodeSignature/CodeRequirements
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/_CodeSignature/CodeRequirements-1
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/_CodeSignature/CodeResources
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/_CodeSignature/CodeSignature
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/.DS_Store
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKAVMoviePlayerController.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKFFMonitor.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKFFMoviePlayerController.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKFFOptions.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKKVOController.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKMediaFramework.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKMediaModule.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKMediaPlayback.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKMediaPlayer.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKMPMoviePlayerController.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Headers/IJKNotificationManager.h
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/IJKMediaFramework
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Info.plist
+MiaowShow/MiaowShow/Classes/Frameworks/IJKMediaFramework.framework/Modules/module.modulemap
