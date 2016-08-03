@@ -9,7 +9,8 @@
 #import "ShowTimeViewController.h"
 #import <LFLiveKit.h>
 
-@interface ShowTimeViewController () <LFLiveSessionDelegate>
+
+@interface ShowTimeViewController () <LFLiveSessionDelegate,UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *beautifulBtn;
 @property (weak, nonatomic) IBOutlet UIButton *livingBtn;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
@@ -88,7 +89,15 @@
     if (self.session.state == LFLivePending || self.session.state == LFLiveStart){
         [self.session stopLive];
     }
-    [self dismissViewControllerAnimated:YES completion:nil];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"真的要结束直播" preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+         [self dismissViewControllerAnimated:YES completion:nil];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alert animated:NO completion:^{
+        
+    }];
+   
 }
 
 // 开启/关闭美颜相机
@@ -111,13 +120,46 @@
     if (sender.selected) { // 开始直播
         LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
         // 如果是跟我blog教程搭建的本地服务器, 记得填写你电脑的IP地址
-        stream.url = @"rtmp://192.168.1.102:1935/rtmplive/room";
+        stream.url = @"rtmp://192.168.5.98:1935/rtmplive/room";
         self.rtmpUrl = stream.url;
         [self.session startLive:stream];
     }else{ // 结束直播
         [self.session stopLive];
         self.statusLabel.text = [NSString stringWithFormat:@"状态: 直播被关闭\nRTMP: %@", self.rtmpUrl];
+        //直播结束可以选择发布或保存本地
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"直接发布或保存本地" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"保存本地" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self saveToLocation];
+             [self dismissViewControllerAnimated:YES completion:nil];
+        }]];
+        [alert addAction:[UIAlertAction actionWithTitle:@"直接发布" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
+            [self publishDirect];
+             [self dismissViewControllerAnimated:YES completion:nil];
+        }]];
+        [self presentViewController:alert animated:NO completion:^{
+            
+        }];
     }
+}
+
+/**
+ *  @author cherry
+ *
+ *  保存本地
+ */
+- (void)saveToLocation
+{
+    
+}
+
+/**
+ *  @author cherry
+ *
+ *  直接发布
+ */
+- (void)publishDirect
+{
+    
 }
 
 #pragma mark -- LFStreamingSessionDelegate
@@ -155,6 +197,7 @@
 - (void)liveSession:(nullable LFLiveSession*)session errorCode:(LFLiveSocketErrorCode)errorCode{
     
 }
+
 
 @end
 

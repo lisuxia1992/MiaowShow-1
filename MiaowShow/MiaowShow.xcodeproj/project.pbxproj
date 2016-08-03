@@ -71,6 +71,11 @@
 		C7FD57731D2BA8DA0005BA11 /* NSSafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FD57721D2BA8DA0005BA11 /* NSSafeObject.m */; };
 		C7FD57751D2BAA3F0005BA11 /* danmu.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7FD57741D2BAA3F0005BA11 /* danmu.plist */; };
 		ED51E2801D3F589100CA583C /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED51E27F1D3F589100CA583C /* IJKMediaFramework.framework */; };
+		ED730DC11D41BCCB001D31F1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED730DC01D41BCCB001D31F1 /* Profile.storyboard */; };
+		ED730DCB1D41BFC7001D31F1 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = ED730DCA1D41BFC7001D31F1 /* Profile.m */; };
+		ED730DCE1D41C020001D31F1 /* ProfileHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED730DCD1D41C020001D31F1 /* ProfileHeaderCell.m */; };
+		ED730DD11D41C03F001D31F1 /* ProfileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED730DD01D41C03F001D31F1 /* ProfileTableViewCell.m */; };
+		ED730DD31D41C2BA001D31F1 /* thumb_IMG_0161_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED730DD21D41C2BA001D31F1 /* thumb_IMG_0161_1024.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +213,14 @@
 		C7FD57741D2BAA3F0005BA11 /* danmu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = danmu.plist; sourceTree = "<group>"; };
 		CCCED8D8316CB6B54734EF98 /* Pods-MiaowShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaowShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiaowShow/Pods-MiaowShow.debug.xcconfig"; sourceTree = "<group>"; };
 		ED51E27F1D3F589100CA583C /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		ED730DC01D41BCCB001D31F1 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		ED730DC91D41BFC7001D31F1 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Profile.h; path = Model/Profile.h; sourceTree = "<group>"; };
+		ED730DCA1D41BFC7001D31F1 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Profile.m; path = Model/Profile.m; sourceTree = "<group>"; };
+		ED730DCC1D41C020001D31F1 /* ProfileHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderCell.h; sourceTree = "<group>"; };
+		ED730DCD1D41C020001D31F1 /* ProfileHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderCell.m; sourceTree = "<group>"; };
+		ED730DCF1D41C03F001D31F1 /* ProfileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewCell.h; sourceTree = "<group>"; };
+		ED730DD01D41C03F001D31F1 /* ProfileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewCell.m; sourceTree = "<group>"; };
+		ED730DD21D41C2BA001D31F1 /* thumb_IMG_0161_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_IMG_0161_1024.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -777,6 +790,8 @@
 		C769A8A51D29FCB2001EFB5C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				ED730DC31D41BE54001D31F1 /* View */,
+				ED730DC21D41BE43001D31F1 /* Model */,
 				C769A8A61D29FCB2001EFB5C /* Controller */,
 			);
 			path = Profile;
@@ -787,6 +802,7 @@
 			children = (
 				C769A8AA1D29FCD6001EFB5C /* ProfileController.h */,
 				C769A8AB1D29FCD6001EFB5C /* ProfileController.m */,
+				ED730DC01D41BCCB001D31F1 /* Profile.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -807,6 +823,27 @@
 				C7FD57721D2BA8DA0005BA11 /* NSSafeObject.m */,
 			);
 			path = SafeObject;
+			sourceTree = "<group>";
+		};
+		ED730DC21D41BE43001D31F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED730DC91D41BFC7001D31F1 /* Profile.h */,
+				ED730DCA1D41BFC7001D31F1 /* Profile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ED730DC31D41BE54001D31F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED730DCC1D41C020001D31F1 /* ProfileHeaderCell.h */,
+				ED730DCD1D41C020001D31F1 /* ProfileHeaderCell.m */,
+				ED730DCF1D41C03F001D31F1 /* ProfileTableViewCell.h */,
+				ED730DD01D41C03F001D31F1 /* ProfileTableViewCell.m */,
+				ED730DD21D41C2BA001D31F1 /* thumb_IMG_0161_1024.jpg */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -931,6 +968,8 @@
 				C78DB1221D13ACF60060D941 /* ALinCatEarView.xib in Resources */,
 				BB87BC421D25A3E8000B084D /* ALinLiveEndView.xib in Resources */,
 				C757834E1D0FE71D00CD856B /* ALinAnchorViewCell.xib in Resources */,
+				ED730DC11D41BCCB001D31F1 /* Profile.storyboard in Resources */,
+				ED730DD31D41C2BA001D31F1 /* thumb_IMG_0161_1024.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1015,13 +1054,16 @@
 				C75783621D1008B500CD856B /* UIViewController+SLExtension.m in Sources */,
 				C73F71FC1D12422500F28090 /* UIImage+ALinExtension.m in Sources */,
 				C769A8AC1D29FCD6001EFB5C /* ProfileController.m in Sources */,
+				ED730DCE1D41C020001D31F1 /* ProfileHeaderCell.m in Sources */,
 				BBE540EF1D0F26F300BF723E /* ThirdLoginView.m in Sources */,
+				ED730DCB1D41BFC7001D31F1 /* Profile.m in Sources */,
 				C7FD57731D2BA8DA0005BA11 /* NSSafeObject.m in Sources */,
 				C72A3F2D1D0F93CE002FC3F5 /* UIView+SLExtension.m in Sources */,
 				C75783121D0FB38200CD856B /* ALinNetworkTool.m in Sources */,
 				C73F72051D12564800F28090 /* ALinLiveAnchorView.m in Sources */,
 				BBDA0D821D2AB3EB00B49588 /* ALinH264Encoder.m in Sources */,
 				BB9F77371D116A85007BB373 /* ALinHotLiveCell.m in Sources */,
+				ED730DD11D41C03F001D31F1 /* ProfileTableViewCell.m in Sources */,
 				C75783281D0FE27800CD856B /* HomeViewController.m in Sources */,
 				C75783291D0FE27800CD856B /* ALinLive.m in Sources */,
 				BB87BC401D25A3D4000B084D /* ALinLiveEndView.m in Sources */,
